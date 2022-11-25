@@ -1,12 +1,7 @@
 // PocketPiano.c
 // Runs on TM4C123
 // Jwalanthi Ranganthan and Phebe Tan
-// This is a starter project for the EE319K Lab 10
 
-// Last Modified: 1/12/2022 
-// http://www.spaceinvaders.de/
-// sounds at http://www.classicgaming.cc/classics/spaceinvaders/sounds.php
-// http://www.classicgaming.cc/classics/spaceinvaders/playguide.php
 
 // ******* Possible Hardware I/O connections*******************
 // Slide pot pin 1 connected to ground
@@ -391,68 +386,4 @@ int main(void){
 			ST7735_DrawBitmap(0,127, finalscreen, 160, 128);
 		};
 }
-/*  for(phrase_t myPhrase=HELLO; myPhrase<= GOODBYE; myPhrase++){
-    for(Language_t myL=English; myL<= French; myL++){
-         ST7735_OutString((char *)Phrases[LANGUAGE][myL]);
-      ST7735_OutChar(' ');
-         ST7735_OutString((char *)Phrases[myPhrase][myL]);
-      ST7735_OutChar(13);
-    }
-  }
-  Delay100ms(30);
-  ST7735_FillScreen(0x0000);       // set screen to black
-  l = 128;
-  while(1){
-    Delay100ms(20);
-    for(int j=0; j < 3; j++){
-      for(int i=0;i<16;i++){
-        ST7735_SetCursor(7*j+0,i);
-        ST7735_OutUDec(l);
-        ST7735_OutChar(' ');
-        ST7735_OutChar(' ');
-        ST7735_SetCursor(7*j+4,i);
-        ST7735_OutChar(l);
-        l++;
-      }
-    }
-  }  */
-	
-//}
-/*
-int main1(void){
-  DisableInterrupts();
-  TExaS_Init(NONE);       // Bus clock is 80 MHz 
-  Random_Init(1);
 
-  Output_Init();
-  ST7735_FillScreen(0x0000);            // set screen to black
-  
-  ST7735_DrawBitmap(22, 159, PlayerShip0, 18,8); // player ship bottom
-  ST7735_DrawBitmap(53, 151, Bunker0, 18,5);
-  ST7735_DrawBitmap(42, 159, PlayerShip1, 18,8); // player ship bottom
-  ST7735_DrawBitmap(62, 159, PlayerShip2, 18,8); // player ship bottom
-  ST7735_DrawBitmap(82, 159, PlayerShip3, 18,8); // player ship bottom
-
-  ST7735_DrawBitmap(0, 9, SmallEnemy10pointA, 16,10);
-  ST7735_DrawBitmap(20,9, SmallEnemy10pointB, 16,10);
-  ST7735_DrawBitmap(40, 9, SmallEnemy20pointA, 16,10);
-  ST7735_DrawBitmap(60, 9, SmallEnemy20pointB, 16,10);
-  ST7735_DrawBitmap(80, 9, SmallEnemy30pointA, 16,10);
-  ST7735_DrawBitmap(100, 9, SmallEnemy30pointB, 16,10);
-
-  Delay100ms(50);              // delay 5 sec at 80 MHz
-
-  ST7735_FillScreen(0x0000);   // set screen to black
-  ST7735_SetCursor(1, 1);
-  ST7735_OutString("GAME OVER");
-  ST7735_SetCursor(1, 2);
-  ST7735_OutString("Nice try,");
-  ST7735_SetCursor(1, 3);
-  ST7735_OutString("Earthling!");
-  ST7735_SetCursor(2, 4);
-  LCD_OutDec(1234);
-  while(1){
-  }
-
-}
-*/
