@@ -1,9 +1,6 @@
 // Sound.c
 // Runs on any TM4C123
-// Sound assets based off the original Space Invaders
-// Import these constants into your SpaceInvaders.c for sounds!
-// Jonathan Valvano
-// 11/15/2021
+// Jwalanthi Ranganathan and Phebe Tan
 #include <stdint.h>
 #include "../inc/tm4c123gh6pm.h"
 #include "Sound.h"
